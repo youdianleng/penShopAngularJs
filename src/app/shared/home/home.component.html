@@ -1,2 +1,12 @@
-<h1>Hello Home</h1>
+<div>
+    <!-- Este es tu header que permanece constante -->
+    <app-header></app-header>
 
+    <!-- Contenido común de la página -->
+    <h1>Hello Home</h1>
+    
+    <app-daily-notice></app-daily-notice>
+
+    <!-- Aquí se renderizarán los componentes según la ruta activa -->
+    <router-outlet></router-outlet>
+</div>

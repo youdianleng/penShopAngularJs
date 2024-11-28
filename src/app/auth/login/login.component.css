@@ -1,0 +1,33 @@
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    color: var(--text);
+    overflow: hidden;
+}
+
+
+.loginBackgroundImg{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.loginContainer{
+    opacity: 95%;
+    background-color: white;
+    backdrop-filter: blur(10px);
+    width: 50%;
+    position: absolute;
+}
+
+.logoLogin{
+    width: 260px;
+    height: 210px;
+}
