@@ -9,33 +9,33 @@
     <div class="loginContainer p-20 pt-10 pb-15 rounded-3xl">
         <!-- Logo -->
         <div class="flex justify-center">
-            <img src="../../../assets/logo.jpg" class="logoLogin"> 
+            <img src="../../../assets/logo.jpg" class="logoLogin">
         </div>
+
         <div class="flex justify-center w-full">
             <div class="grid grid-rows-1 gap-2 w-96">
-                <form >
+                    <h1 class="flex justify-center m-0 p-0 ">Log In</h1>
+                <form [formGroup]="loginForm" (ngSubmit)="login()">
                     <div class="grid grid-rows-1">
-                        <label for="username" class="pb-1">Username</label>
+                        <label for="email" class="pb-1 font-bold">Email</label>
                         <input 
                             pInputText
-                            id="username" 
-                            aria-describedby="username-help"/>
-                        <small id="username-help">
-                            Enter your username to reset your password.
-                        </small>
+                            id="email" 
+                            aria-describedby="username-help"
+                            formControlName="email"/>
                     </div>
                     <div class="grid grid-rows-1 pt-3">
-                        <label for="username" class="pb-1">Password</label>
+                        <label for="password" class="pb-1 font-bold">Password</label>
                         <input 
                             pInputText
-                            id="username" 
-                            aria-describedby="username-help "/>
-                        <small id="username-help">
-                            Enter your login password.
-                        </small>
+                            id="password" 
+                            aria-describedby="username-help "
+                            formControlName="password"
+                            type="password"/>
                     </div>
                     <div class="pt-3">
                         <button 
+                        type="submit"
                         pButton 
                         pRipple 
                         label="Submit" 
