@@ -24,8 +24,8 @@ export class LoginComponent {
   async login(){
     if(this.loginForm.valid){
       try{
-        console.log("hola")
         const allowLogin = await this._authService.login(
+          
           this.loginForm.value.email!,
           this.loginForm.value.password!,
         );

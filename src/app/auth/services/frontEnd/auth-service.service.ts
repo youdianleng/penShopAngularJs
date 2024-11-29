@@ -14,8 +14,8 @@ export class AuthServiceService {
     const credentials = { user, password };
     return this.http.post(`${environment.apiUrl}/auth/login`, credentials, {
       observe: 'response',
-      withCredentials: true,
-    });
+       withCredentials: true,
+     });
   }
 
   all(){
